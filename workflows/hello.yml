@@ -1,7 +1,0 @@
-on:
-  push:
-    branches: [main]
-
-jobs:
-  hello-world:
-    echo: 'Hello World!'
