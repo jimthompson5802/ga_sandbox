@@ -1,14 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 
 name: CI
+# run job only on owner's repo
+if: ${{ github.repository_owner == 'jimthompson5802' }}
 
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
-    # run job only on owner's repo
-    if: ${{ github.repository_owner == 'jimthompson5802' }}
 
   pull_request:
     branches: [ main ]
