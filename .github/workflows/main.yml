@@ -13,12 +13,12 @@ on:
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Docker image build and test
     steps:
     - name: docker build and test
 #      id: hello
 #      uses: actions/hello-world-docker-action@v1
-      uses: jimthompson5802/ga_sandbox/docker/custom_build_test@v0.0.6
+      uses: jimthompson5802/ga_sandbox/docker/custom_build_test@v0.0.7
 #      with:
 #        who-to-greet: 'Say hi to Jim'
 #    # Use the output from the `hello` step
