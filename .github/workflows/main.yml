@@ -8,9 +8,9 @@ jobs:
     - name: Hello world action step
       id: hello
 #      uses: actions/hello-world-docker-action@v1
-      uses: jimthompson5802/.github/build-image@v1
+      uses: jimthompson5802/hello-world-docker-actions@v1
       with:
-        who-to-greet: 'Mona the Octocat'
+        who-to-greet: 'Say hi to Jim'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
