@@ -12,6 +12,9 @@ description: 'build docker image and test'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  entrypoint: /bin/sh
   args:
-    - ls -l /
+    - ls
+    - -l
+    - /
 #    - ${{ inputs.who-to-greet }}
