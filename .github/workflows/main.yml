@@ -15,12 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-    - name: Hello world action step
-      id: hello
+    - name: docker build and test
+#      id: hello
 #      uses: actions/hello-world-docker-action@v1
-      uses: jimthompson5802/ga_sandbox/docker/image_build_test@v5
-      with:
-        who-to-greet: 'Say hi to Jim'
-    # Use the output from the `hello` step
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+      uses: jimthompson5802/ga_sandbox/docker/custom_build_test@v0.0.1
+#      with:
+#        who-to-greet: 'Say hi to Jim'
+#    # Use the output from the `hello` step
+#    - name: Get the output time
+#      run: echo "The time was ${{ steps.hello.outputs.time }}"
