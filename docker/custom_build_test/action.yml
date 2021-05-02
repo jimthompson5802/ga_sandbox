@@ -14,6 +14,6 @@ runs:
   image: 'Dockerfile'
   entrypoint: /bin/sh
   args:
-    - c
+    - "-c"
     - "ls -l /"
 #    - ${{ inputs.who-to-greet }}
