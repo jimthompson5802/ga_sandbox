@@ -8,7 +8,7 @@ jobs:
     - name: Hello world action step
       id: hello
 #      uses: actions/hello-world-docker-action@v1
-      uses: jimthompson5802/hello-world-docker-actions@v1
+      uses: jimthompson5802/ga_sandbox@v1
       with:
         who-to-greet: 'Say hi to Jim'
     # Use the output from the `hello` step
